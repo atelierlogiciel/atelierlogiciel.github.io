@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Pro · Téléchargement · L'Atelier Logiciel</title>
+<meta name="description" content="Téléchargez Budget Pro, le logiciel de budget du livre « Créez votre logiciel de budget » d'Olivier Godi. Mises à jour gratuites pour les lecteurs.">
+<link rel="icon" href="icone-180.png">
+<link rel="apple-touch-icon" href="icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Syne:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#FFF8F2;--carte:#FFFFFF;--encre:#2B1A12;--doux:#7A5F52;--orange:#E64A19;--orange-f:#BF360C;--pale:#FDEDE4;--bord:#F2D6C8;--vert:#2E7D32;--vert-p:#E8F5E9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fond:#160E0A;--carte:#22160F;--encre:#FBEFE7;--doux:#C7AE9F;--orange:#FF7A45;--orange-f:#FF8A50;--pale:#2E1A10;--bord:#4A2C1C;--vert:#7BC67F;--vert-p:#14261A}}
+:root[data-theme="dark"]{--fond:#160E0A;--carte:#22160F;--encre:#FBEFE7;--doux:#C7AE9F;--orange:#FF7A45;--orange-f:#FF8A50;--pale:#2E1A10;--bord:#4A2C1C;--vert:#7BC67F;--vert-p:#14261A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Outfit,system-ui,sans-serif;background:var(--fond);color:var(--encre);line-height:1.55;font-size:17px}
+a{color:var(--orange-f)}
+.haut{background:linear-gradient(160deg,#1A0F0A 0%,#3A1608 60%,#7A2A0A 100%);color:#FFF6EE;padding:28px 16px 70px;position:relative;overflow:hidden}
+.haut::after{content:"";position:absolute;width:700px;height:700px;right:-250px;bottom:-420px;background:radial-gradient(circle,rgba(255,112,40,.45),transparent 65%)}
+.barre{max-width:1000px;margin:0 auto 46px;display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#FFB48A;position:relative;z-index:1}
+.barre a{color:inherit;text-decoration:none}
+.heros{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 230px;gap:40px;align-items:center;position:relative;z-index:1}
+.heros h1{font-family:Syne,sans-serif;font-size:clamp(40px,7vw,68px);line-height:1;letter-spacing:-.02em}
+.heros h1 span{color:#FF8A50}
+.heros p{color:#F0D9C9;font-size:19px;margin-top:16px;max-width:560px}
+.heros img{width:100%;border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.5);transform:rotate(3deg)}
+main{max-width:1000px;margin:-40px auto 0;padding:0 16px 60px;position:relative;z-index:2}
+.carte{background:var(--carte);border:1px solid var(--bord);border-radius:18px;padding:28px;margin-bottom:22px;box-shadow:0 10px 30px rgba(120,40,10,.08)}
+.dl{display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:center}
+.dl img{width:96px;height:96px}
+.dl h2{font-family:Syne,sans-serif;font-size:28px}
+.meta{color:var(--doux);font-size:15px;margin:2px 0 14px}
+.bouton{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#F4632A,#D84315);color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:15px 26px;border-radius:14px;box-shadow:0 8px 20px rgba(216,67,21,.35)}
+.bouton:hover{filter:brightness(1.07)}
+.bouton.second{background:var(--pale);color:var(--orange-f);box-shadow:none;border:1.5px solid var(--bord);font-size:17px;padding:12px 20px}
+.mdp{margin-top:16px;background:var(--pale);border:1px dashed var(--bord);border-radius:12px;padding:12px 16px;font-size:15.5px}
+h3{font-family:Syne,sans-serif;font-size:22px;margin-bottom:14px}
+ol.etapes{list-style:none;counter-reset:e;display:grid;gap:12px}
+ol.etapes li{counter-increment:e;position:relative;padding-left:44px}
+ol.etapes li::before{content:counter(e);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:grid;place-items:center;font-size:15px}
+.deux{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.deux .carte{margin:0;display:flex;flex-direction:column;gap:12px}
+.deux p{color:var(--doux);flex:1}
+.bientot{display:inline-block;font-size:14px;font-weight:600;color:var(--doux);background:var(--pale);border-radius:30px;padding:8px 14px;align-self:flex-start}
+.version{border-left:3px solid var(--orange);padding:4px 0 4px 16px;margin-top:6px}
+.version b{font-family:Syne,sans-serif}
+.version .date{color:var(--doux);font-size:14px;margin-left:8px}
+.version ul{margin:8px 0 0 18px;color:var(--doux)}
+.tag{display:inline-block;background:var(--vert-p);color:var(--vert);font-size:12px;font-weight:700;border-radius:20px;padding:2px 10px;margin-left:8px;vertical-align:2px}
+code{background:var(--pale);padding:1px 6px;border-radius:5px;font-size:.92em}
+kbd{font-family:inherit;font-weight:600;font-size:.88em;border:1px solid var(--bord);border-bottom-width:2px;border-radius:5px;padding:0 6px;background:var(--carte)}
+footer{text-align:center;color:var(--doux);font-size:14.5px;padding:10px 16px 40px}
+@media (max-width:720px){
+  .heros{grid-template-columns:1fr}.heros img{width:170px;justify-self:center}
+  .dl{grid-template-columns:1fr}.dl img{width:72px;height:72px}
+  .deux{grid-template-columns:1fr}
+  .carte{padding:22px}
+}
+</style>
+</head>
+<body>
+<header class="haut">
+  <div class="barre"><a href="./">L'Atelier Logiciel</a></div>
+  <div class="heros">
+    <div>
+      <h1>Budget <span>Pro</span></h1>
+      <p>Le logiciel du livre <strong>« Créez votre logiciel de budget »</strong> d'Olivier Godi. Gratuit, privé, sans abonnement, et mis à jour gratuitement pour tous les lecteurs.</p>
+    </div>
+    <img src="couverture.jpg" alt="Couverture du livre Créez votre logiciel de budget, d'Olivier Godi">
+  </div>
+</header>
+
+<main>
+  <section class="carte dl" id="telecharger">
+    <img src="icone.png" alt="">
+    <div>
+      <h2>Télécharger Budget Pro</h2>
+      <p class="meta">Version 1.0.0 · Windows · fichier <code>budget-pro.zip</code> (300 Ko)</p>
+      <a class="bouton" href="budget-pro.zip" download>⬇ Télécharger Budget Pro</a>
+      <p class="mdp">🔒 Le fichier est protégé par un <strong>mot de passe</strong>, réservé aux lecteurs : vous le trouverez au <strong>chapitre 3</strong> du livre, dans la section « Récupérer le logiciel ».</p>
+    </div>
+  </section>
+
+  <section class="carte">
+    <h3>Ouvrir le fichier téléchargé</h3>
+    <ol class="etapes">
+      <li>Le fichier <code>budget-pro.zip</code> arrive dans votre dossier <strong>Téléchargements</strong>.</li>
+      <li>Faites un clic droit dessus, choisissez <strong>Extraire tout</strong>, puis cliquez sur <strong>Extraire</strong>.</li>
+      <li>Windows demande le mot de passe : tapez celui du livre, puis <strong>OK</strong>.</li>
+      <li>Rangez le dossier <code>budget-pro</code> obtenu dans <strong>Documents</strong>, puis suivez le livre, chapitre 3.</li>
+    </ol>
+  </section>
+
+  <div class="deux">
+    <section class="carte" id="idees">
+      <h3>💡 La boîte à idées</h3>
+      <p>Une fonction qui vous manque, une explication à améliorer, une idée de nouveau logiciel ? Proposez-la : chaque idée est lue, et les meilleures deviennent les prochaines mises à jour.</p>
+      <span class="bientot" data-lien="idees">Bientôt disponible</span>
+    </section>
+    <section class="carte" id="nouvelles">
+      <h3>📬 Être prévenu par e-mail</h3>
+      <p>Recevez un e-mail à chaque mise à jour de Budget Pro ou à la sortie d'un nouveau logiciel. Votre adresse ne sert qu'à cela, n'est jamais transmise, et vous pouvez vous désinscrire à tout moment.</p>
+      <span class="bientot" data-lien="nouvelles">Bientôt disponible</span>
+    </section>
+  </div>
+
+  <section class="carte" id="versions" style="margin-top:22px">
+    <h3>Les nouveautés, version par version</h3>
+    <div class="version">
+      <b>Version 1.0.0</b><span class="date">octobre 2026</span><span class="tag">Actuelle</span>
+      <ul><li>Première version, celle décrite dans le livre.</li></ul>
+    </div>
+    <p style="color:var(--doux);margin-top:16px;font-size:15.5px">Pour mettre à jour : remplacez <code>index.html</code> dans votre dossier <code>budget-pro</code> par celui de la nouvelle version (méthode navigateur), ou refabriquez l'installateur (méthode Electron, chapitre 33). Vos données sont conservées.</p>
+  </section>
+
+  <section class="carte">
+    <h3>Une question ?</h3>
+    <p>Un souci de téléchargement, une question sur le logiciel ? Écrivez à <a href="mailto:atelierlogiciel.contact@gmail.com">atelierlogiciel.contact@gmail.com</a> en indiquant votre version de Windows, le chapitre où vous en êtes et le message exact.</p>
+  </section>
+</main>
+
+<footer>© 2026 Olivier Godi · L'Atelier Logiciel · Budget Pro est fourni aux lecteurs du livre pour leur usage personnel.</footer>
+</body>
+</html>
