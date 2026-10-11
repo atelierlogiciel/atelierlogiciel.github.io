@@ -86,6 +86,13 @@ section{padding:72px 0}
 .offre p{color:var(--doux);font-size:15px}
 
 /* ── Parties ── */
+.nouv{max-width:780px;margin:34px auto 0;display:grid;gap:14px}
+.nouv > div{background:var(--carte);border:1px solid var(--bord);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.nouv .ico{font-size:28px;line-height:1.1}
+.nouv h3{font-size:17px;margin-bottom:3px}
+.nouv p{color:var(--doux);font-size:15px}
+.nouv-badge{display:inline-block;background:var(--orange);color:#fff;font-size:12px;font-weight:700;border-radius:99px;padding:3px 11px;margin-bottom:10px;letter-spacing:.03em}
+.nouv-note{max-width:780px;margin:18px auto 0;text-align:center;color:var(--doux);font-size:15px}
 .parties{list-style:none;margin:36px auto 0;max-width:780px;counter-reset:p}
 .parties li{display:grid;grid-template-columns:62px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--bord)}
 .parties li::before{counter-increment:p;content:counter(p);font-family:Syne,sans-serif;font-weight:800;font-size:38px;color:var(--orange);line-height:1}
@@ -237,6 +244,25 @@ footer a{color:inherit}
       <div><b>246</b>pages (broché)</div>
       <div><b>60+</b>captures d'écran</div>
     </div>
+  </div>
+</section>
+
+<section id="nouveautes" style="padding-top:0">
+  <div class="enveloppe">
+    <div class="centre">
+      <span class="nouv-badge">Mise à jour · octobre 2026</span>
+      <p class="surtitre">Nouveautés du logiciel</p>
+      <h2>Le logiciel continue d'avancer</h2>
+      <p class="intro">Ces améliorations sont arrivées après l'écriture du livre. Elles sont déjà incluses dans le logiciel à télécharger, sans rien payer de plus. Tout ce que décrit le livre reste valable : ce sont des options en plus.</p>
+    </div>
+    <div class="nouv">
+      <div><div class="ico">🛡️</div><div><h3>Crédits : l'assurance calculée toute seule</h3><p>Indiquez le montant emprunté et la durée : Budget Pro retrouve le vrai remboursement du prêt et affiche à part l'assurance comprise dans votre mensualité. Le capital restant dû tombe au centime près sur celui de votre banque.</p></div></div>
+      <div><div class="ico">📶</div><div><h3>Prêts lissés et paliers</h3><p>Votre mensualité change à une date, par exemple quand un autre prêt se termine ? Ajoutez autant de paliers que nécessaire. Le restant dû et la facture du mois suivent automatiquement.</p></div></div>
+      <div><div class="ico">🎯</div><div><h3>Une mensualité différente des autres</h3><p>La dernière échéance d'un prêt est souvent arrondie par la banque. Une case « Différence » permet de l'indiquer pour garder un restant dû exact.</p></div></div>
+      <div><div class="ico">📝</div><div><h3>Mode Manuel plus complet</h3><p>Même pour une dette saisie à la main, vous pouvez noter mensualité, taux, durée et dates au même endroit, en aide-mémoire.</p></div></div>
+      <div><div class="ico">🔢</div><div><h3>Grands montants toujours lisibles</h3><p>Les chiffres des cartes du haut s'adaptent à la taille de la fenêtre et ne sont plus jamais coupés.</p></div></div>
+    </div>
+    <p class="nouv-note">Lecteurs du livre : téléchargez simplement la dernière version, vos données sont conservées.</p>
   </div>
 </section>
 
